@@ -27,7 +27,7 @@ body {
 }
 
 
-.right-links, .left-links {
+.right-links, .left-links { /* Left-links and right-links are applied in the header only currently */
     flex: 1;
     padding: 0 16px;
 }
@@ -49,4 +49,95 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+.title {
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 400px;
+    padding: 70px;
+    background-color: #41536d;
+}
+
+.title-text-content {
+    flex: auto;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    max-width: 400px;
+    max-height: 300px
+}
+
+.title-text {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.title-description {
+    margin-bottom: 10px;
+    font-size: 18;
+    color: #E5E7EB;
+}
+
+.hero-img { /* img container */
+    flex: 1;
+    display: flex;
+    max-height: 464px;
+    max-width: 302px;
+    margin-left: 20px;
+
+}
+
+.title-img { /* img class itself */
+    flex: 1;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+
+
+
+
+.highlights {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight-header {
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.testimonial {
+    flex: 1;
+    display: flex;
+    background-color: #E5E7EB;
+}
+
+.signup {
+    flex: 1;
+    display: flex;
+}
+
+
+.signup-button {
+    flex: auto;
+    width: 70px;
+    height: 25px;
 }
