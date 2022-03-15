@@ -6,21 +6,37 @@ html {
 
 *, *::before, *::after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
     min-width: 100vw;
+    background-color: #41536d;
 }
 
 .header, .footer {
-    flex: auto;
     display: flex;
-    max-height: 50px;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    gap: 2rem;
     background-color: #41536d;
+}
+
+.header {
+}
+
+.header a {
+    color:white;
+    text-decoration: none;
+}
+
+.header ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
 }
 
 .footer {
@@ -31,31 +47,22 @@ body {
     color: white
 }
 
-
-
-
-.right-links, .left-links { /* Left-links and right-links are applied in the header only currently */
-    flex: 1;
-    padding: 0 16px;
-}
-
-.left-links {
+.left-links{
     color: white;
     font-size: 24px;
 }
 
-.right-links{
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
 
-.right-links ul{
-    display: flex;
-    gap: 20px;
+.right-links {
+    justify-content: flex-start;
+    gap: 50px;
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+.right-links ul {
+    display: flex;
 }
 
 .title {
@@ -68,7 +75,7 @@ body {
 }
 
 .title-text-content {
-    flex: auto;
+    flex: 1;
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;
@@ -111,6 +118,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 50px 0px 100px 0px;
+    background-color: white;
 }
 
 .highlight-header {
@@ -132,9 +140,12 @@ body {
 }
 
 .highlight {
-    flex: 1;
+    flex: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
     padding: 15px;
 }
 
@@ -156,8 +167,9 @@ body {
 
 .highlight-text {
     flex: 1;
+    flex-wrap: wrap;
+    max-height: 10px;
     padding-top: 8px;
-    text-align: center;
 }
 
 .testimonial {
@@ -195,13 +207,15 @@ body {
 .signup {
     flex: 1;
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 70px 400px;
+    background-color: white;
 }
 
 .signup-content {
     flex: auto;
     display: flex;
-    flex-wrap: wrap;
     padding: 50px;
     border-radius: 8px;
     background-color: #3882F6;
@@ -234,9 +248,8 @@ body {
 }
 
 .signup-button {
-    flex: auto;
-    max-width: 70px;
-    max-height: 25px;
+    width: 60px;
+    height: 25px;
     border-radius: 6px;
     border: 2px solid white;
     background-color: #3882F6;
