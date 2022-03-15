@@ -11,6 +11,9 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-height: 100vh;
     min-width: 100vw;
     background-color: #41536d;
@@ -26,6 +29,8 @@ body {
 }
 
 .header {
+    flex: 1;
+    display: flex;
 }
 
 .header a {
@@ -39,6 +44,12 @@ body {
     list-style-type: none;
 }
 
+.header-content {
+    display: flex;
+    justify-content: center;
+    width: 750px;
+}
+
 .footer {
     flex: 1;
     display: flex;
@@ -48,13 +59,18 @@ body {
 }
 
 .left-links{
+    flex: 1;
+    display: flex;
     color: white;
     font-size: 24px;
+    justify-content: flex-start;
 }
 
 
 .right-links {
-    justify-content: flex-start;
+    flex: 1;
+    display: flex;
+    align-items: center;
     gap: 50px;
     margin: 0;
     padding: 0;
@@ -63,6 +79,7 @@ body {
 
 .right-links ul {
     display: flex;
+    align-items: baseline;
 }
 
 .title {
